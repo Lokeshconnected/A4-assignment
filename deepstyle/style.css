@@ -1,0 +1,413 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.line{
+    margin-top: 10px;
+    height: 2px;
+    width: 86%;
+    margin-left: 113px;
+    background-color: rgb(231, 228, 228);
+}
+
+
+
+.options{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family:'Montserrat', sans-serif;
+    padding: 70px;
+    
+}
+
+.options h3{
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.icons{
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+.ri-search-line{
+    font-size: 25px;
+}
+
+.ri-shopping-cart-line{
+    font-size: 18px;
+    color: white;
+}
+
+.cartdiv{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: black;
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    height: 550px;
+    width: 100%;
+    display: flex;
+}
+
+.leftdiv{
+    height: 100%;
+    width: 15%;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+}
+
+.leftdiv .c1{
+    height: 60px;
+    width: 60px
+}
+
+.leftdiv .s1{
+    height: 100px;
+    width: 90px
+}
+
+.rightdiv{
+    height: 100%;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} 
+
+.centergrid{
+    height: 100%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1r;
+    grid-template-rows: 1fr 9fr;
+    grid-template-areas: 
+    "top top top"
+    "bottomleft bottomcenter bottomright";
+}
+
+.top{
+    grid-area: top;
+    display: flex;
+}
+
+.top img{
+    height: 80px;
+    width:  80px;
+    margin-top: 40px;
+}
+
+.top h1{
+    font-family:'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 45px;
+    padding-top: 20px;
+}
+
+.bottomleft{
+    width: 100%;
+    grid-area: bottomleft;
+
+
+
+}
+
+.bottomleft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.bottomleft img{
+    position: absolute;
+    top: 210px;
+    left: 400px;
+}
+
+
+.lefttopimg{
+    height: 30%;
+    width: 91%;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+    background-color: #efd5a7;
+}
+
+.leftbottomimg{
+    height: 50%;
+    width: 91%;
+    background-color: #23b8af;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.leftbottomimg img{
+    position: absolute;
+    top: 395px;
+    left: 380px;
+    height: 200px;
+    width: 200px;
+}
+
+.centerimg{
+    height: 95%;
+    width: 91%;
+    margin-top: 20px;
+    background-color: #ffdc5a;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.centerimg img{
+    position: absolute;
+    top:230px;
+    left:580px;
+    height: 400px;
+    width: 300px;
+}
+
+.bottomcenter .i1{
+    position: absolute;
+    top: 190px;
+    left: 46%;
+    
+}
+
+.lefttopimg img{
+    height: 150px;
+    width: 150px;
+}
+
+
+.bottomcenter{
+    grid-area: bottomcenter;
+
+}
+
+.bottomright{
+    grid-area: bottomright;
+
+}
+
+.righttopimg{
+    height: 49%;
+    width: 91%;
+    background-color: #fe8739;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-top: 35px;
+}
+
+.righttopimg img{
+    position : absolute;
+    top: 253px;
+    left: 850px;
+    height: 200px;
+    width: 200px;
+}
+
+.rightbottomimg{
+    height: 30%;
+    width: 91%;
+    background-color: #039fee;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+.rightbottomimg img{
+    position: absolute;
+    top: 457px;
+    left: 860px;
+    height: 145px;
+    width: 200px;
+}
+
+.bottomright{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.rightimg{
+    height: 33%;
+    width: 91%;
+    background-color: #76b38c;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 100px;
+}
+
+
+   
+.leftimg{
+    height: 30%;
+    width: 87%;
+    background-color: #feb34d;
+    border-radius: 20px;
+    margin-left: 20px;
+    display:  flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.rightimg img{
+    position: absolute;
+    top: 354px;
+    left: 1100px;
+    height: 180px;
+    width: 200px;
+}
+
+.rightdiv h1{
+    font-family:'Montserrat', sans-serif;
+    font-size: 20px;
+    position: absolute;
+    top: 550px;
+    left: 1150px;
+}
+
+.leftdiv h5{
+    font-family:'Montserrat', sans-serif;
+    font-size: 10px;
+    margin-left: 10px;
+}
+
+.leftdiv h2{
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+.leftdiv img{
+    height: 200px;
+    width: 100px;
+}
+
+.rightdiv .r1{
+    height: 100px;
+    width: 100px; 
+    margin-left: 100px;
+}
+
+.rightdiv .r2{
+    height: 140px;
+    width: 140px; 
+    margin-left: 20px;
+}
+.leftimg img{
+    height: 150px;
+    width: 120px; 
+    
+}
+
+.footer{
+    height: 140px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rose{
+    position: absolute;
+    top: 560px;
+    left: 1200px;
+}
+
+.leftfooter{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.rightfooter{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.leftfooter h3{
+    font-family:'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
+.middlefooter{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rightfooter h1{
+    font-family:'Montserrat', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
+}
+
+.rightfooter h2{
+    display: flex;
+    align-items: center;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.rightfooter i{
+    display: flex;
+    align-items: center;
+}
+
+button{
+    height: 35px;
+    width: 100px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+.rightfooter .righticon{
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
